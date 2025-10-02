@@ -1,3 +1,41 @@
+import string
+
+def is_palindrome(string):
+  '''Check if the word is palindrome, a word, phrase, 
+  or sequence that reads the same backward as forward,'''
+
+  #convert the string to lower case
+  string = string.lower()
+
+  # Using slice it will compare the reverse string and return true if palendrom and fale if not
+  return string == string[::-1]
+
+def is_pangram(sentence):
+  ''' Check if the user's given phrase or sentence is pangram. Pangram if all letters in the alphabet is present'''
+
+  # Convert the user input sentence to lower for case sensitivity
+  sentence = sentence.lower()
+
+  # Get all the lower characters in alphabet
+  alphabet = string.ascii_lowercase
+
+  for char_code in alphabet:
+    if char_code not in sentence:
+      return False # If one letter in alphabet is missing in the sentence
+  return True # If all letters in alphabet is present
+
+def is_tautogram(text):
+  text = text.lower().split() # Convert to lower case and split the given text to list of words.
+
+  first_letter = text[0][0] # Get the first letter of evey singe word.
+
+  for word in text:
+    if word[0] != first_letter:
+      return False # If any word does not have the same letter
+    
+  return True # if all words start with the same letter
+
+
 
 def isogram(word):
     '''checks if a word is an isogram,
