@@ -1,3 +1,8 @@
+# CIS-117 Lab2
+# functions to test for alphabetical antics: palindrome, pangram, tautogram, isogram, abecedarian, dobloon.
+# Group13
+# Justin Barros, Robinson Garcia
+
 import string
 
 def is_palindrome(string):
