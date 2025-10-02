@@ -1,5 +1,6 @@
 # CIS-117 Lab2
-# functions to test for alphabetical antics: palindrome, pangram, tautogram, isogram, abecedarian, dobloon.
+# functions to test for alphabetical antics: palindrome, pangram, tautogram, isogram, abecedarian, dobloon. 
+# each function receives a word as an argument and returns either true of false.
 # Group13
 # Justin Barros, Robinson Garcia
 
